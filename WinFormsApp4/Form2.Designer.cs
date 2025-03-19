@@ -41,6 +41,7 @@
             lWaluta = new Label();
             label5 = new Label();
             textBox2 = new TextBox();
+            Sprawdz = new Button();
             SuspendLayout();
             // 
             // label1
@@ -89,6 +90,7 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "SSD 256GB";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -100,6 +102,7 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "SSD 512GB";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // comboBox1
             // 
@@ -121,6 +124,7 @@
             radioButton3.TabStop = true;
             radioButton3.Text = "SSD 1TB";
             radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // radioButton4
             // 
@@ -132,6 +136,7 @@
             radioButton4.TabStop = true;
             radioButton4.Text = "SSD 2TB";
             radioButton4.UseVisualStyleBackColor = true;
+            radioButton4.CheckedChanged += radioButton4_CheckedChanged;
             // 
             // textBox1
             // 
@@ -139,6 +144,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(65, 23);
             textBox1.TabIndex = 9;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // lWaluta
             // 
@@ -165,11 +171,22 @@
             textBox2.Size = new Size(65, 23);
             textBox2.TabIndex = 11;
             // 
+            // Sprawdz
+            // 
+            Sprawdz.Location = new Point(164, 267);
+            Sprawdz.Name = "Sprawdz";
+            Sprawdz.Size = new Size(75, 23);
+            Sprawdz.TabIndex = 13;
+            Sprawdz.Text = "Koszt";
+            Sprawdz.UseVisualStyleBackColor = true;
+            Sprawdz.Click += button1_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(307, 385);
+            Controls.Add(Sprawdz);
             Controls.Add(label5);
             Controls.Add(textBox2);
             Controls.Add(lWaluta);
@@ -204,5 +221,6 @@
         private Label lWaluta;
         private Label label5;
         private TextBox textBox2;
+        private Button Sprawdz;
     }
 }

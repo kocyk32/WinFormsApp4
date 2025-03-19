@@ -14,7 +14,8 @@ namespace WinFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
+            Form2 f2 = new Form2();
+            f2.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -28,6 +29,22 @@ namespace WinFormsApp4
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ZmienneGlobalne.ZG4 = ZmienneGlobalne.ZG1;
+            textBox1.Text = ZmienneGlobalne.ZG4;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bMonitory_Click(object sender, EventArgs e)
         {
 
         }

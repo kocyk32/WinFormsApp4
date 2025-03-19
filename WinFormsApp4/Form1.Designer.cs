@@ -34,6 +34,7 @@
             bMonitory = new Button();
             lWaluta = new Label();
             textBox1 = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // bKomputery
@@ -74,6 +75,7 @@
             bMonitory.TabIndex = 3;
             bMonitory.Text = "Monitory";
             bMonitory.UseVisualStyleBackColor = true;
+            bMonitory.Click += bMonitory_Click;
             // 
             // lWaluta
             // 
@@ -90,12 +92,24 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(85, 23);
             textBox1.TabIndex = 7;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(313, 260);
+            button1.Name = "button1";
+            button1.Size = new Size(137, 23);
+            button1.TabIndex = 8;
+            button1.Text = "Koszt Zestawu";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(471, 357);
+            Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(lWaluta);
             Controls.Add(bMonitory);
@@ -117,5 +131,6 @@
         private Button bMonitory;
         private Label lWaluta;
         private TextBox textBox1;
+        private Button button1;
     }
 }
