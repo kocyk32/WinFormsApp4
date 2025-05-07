@@ -39,6 +39,7 @@
             lWaluta = new Label();
             lTekst = new Label();
             listView1 = new ListView();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -57,6 +58,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(85, 23);
             textBox1.TabIndex = 29;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // lWaluta
             // 
@@ -89,11 +91,22 @@
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
+            // button1
+            // 
+            button1.Location = new Point(207, 289);
+            button1.Name = "button1";
+            button1.Size = new Size(55, 23);
+            button1.TabIndex = 30;
+            button1.Text = "Dodaj";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(294, 336);
+            Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(lWaluta);
             Controls.Add(lTekst);
@@ -101,6 +114,7 @@
             Controls.Add(label1);
             Name = "Form3";
             Text = "Form3";
+            Load += Form3_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -111,5 +125,6 @@
         private Label lWaluta;
         private Label lTekst;
         private ListView listView1;
+        private Button button1;
     }
 }

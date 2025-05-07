@@ -85,7 +85,12 @@ namespace WinFormsApp4
             temp2 = int.Parse(textBox2.Text);
             wynik = temp1 + temp2;
             ZmienneGlobalne.ZG1 = wynik.ToString();
-            Visible = false; 
+            Visible = false;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

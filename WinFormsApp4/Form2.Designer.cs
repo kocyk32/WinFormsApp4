@@ -170,6 +170,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(65, 23);
             textBox2.TabIndex = 11;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // Sprawdz
             // 
